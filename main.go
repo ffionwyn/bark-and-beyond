@@ -8,11 +8,14 @@ func main() {
     r := gin.Default()
 
     r.Static("/images", "./images")
-
     r.LoadHTMLGlob("html-files/*")
 
     r.GET("/", func(c *gin.Context) {
         c.HTML(200, "homepage.html", gin.H{})
+    })
+
+    r.GET("/contact", func(c *gin.Context) {
+        c.HTML(200, "contact.html", gin.H{})
     })
 
     r.Run(":8080")
