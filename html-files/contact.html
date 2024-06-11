@@ -3,39 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Bark & Beyond</title>
+    <title>Contact Us - Bark & Beyond</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
-            background-color: #fff0f5; 
+            background-color: #fff0f5; /* Two shades lighter */
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff0f5; /* Two shades lighter */
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #800080;
+        }
+
+        .contact-button {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        .contact-button:hover {
+            background-color: #660066;
+        }
+
+        .contact-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            margin-top: auto;
+        }
+
+        .social-buttons a {
+            color: #800080;
+            text-decoration: none;
+            margin-right: 10px;
         }
 
         .content {
             margin-left: 250px;
             padding: 20px;
+        }
+
+        /* Additional styling for hero message */
+        .hero-message {
             text-align: center;
-            color: #800080; 
-        }
-
-        .content h1 {
-            font-size: 2em;
+            color: #800080; /* Dark pink color */
+            font-size: 2.5em; /* Adjust the font size as needed */
             font-weight: bold;
-            margin-bottom: 20px; 
+            margin-bottom: 20px; /* Add some spacing between the heading and the paragraphs */
         }
 
-        .content p {
-            font-size: 1.2em; 
-            margin-bottom: 20px; 
+        .hero-message h2 {
+            display: inline;
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <button class="contact-button"><a href="#contact">Contact Us</a></button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </div>
+
     <div class="content">
         <h1>Contact Us</h1>
-        <p>Phone Number: [xxx]</p>
-        <p>Email: [xxx]</p>
+        <form action="/submit-contact-form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
     </div>
 </body>
 </html>
