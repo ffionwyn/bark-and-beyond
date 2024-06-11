@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Bark & Beyond</title>
+    <title>Contact Us | Bark & Beyond</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
-            background-color: #fff0f5; /* Two shades lighter */
+            background-color: #fff0f5;
         }
 
         .sidebar {
@@ -18,7 +18,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #fff0f5; /* Two shades lighter */
+            background-color: #fff0f5;
             padding-top: 20px;
             text-align: center;
         }
@@ -69,28 +69,53 @@
         }
 
         .social-buttons a {
+            display: block;
             color: #800080;
-            text-decoration: none;
-            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .social-buttons a:hover {
+            color: #660066;
         }
 
         .content {
             margin-left: 250px;
             padding: 20px;
+            text-align: right;
         }
 
-        /* Additional styling for hero message */
-        .hero-message {
-            text-align: center;
-            color: #800080; /* Dark pink color */
-            font-size: 2.5em; /* Adjust the font size as needed */
-            font-weight: bold;
-            margin-bottom: 20px; /* Add some spacing between the heading and the paragraphs */
+        form {
+            text-align: left;
+            width: 40%; /* Adjust width as needed */
+            margin: 0 auto; /* Center the form horizontally */
         }
 
-        .hero-message h2 {
-            display: inline;
-            margin: 0;
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        form button[type="submit"] {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #660066;
         }
     </style>
 </head>
@@ -111,26 +136,21 @@
 
     <div class="content">
         <h1>Contact Us</h1>
-        <form action="/submit-contact-form" method="POST">
+        <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
 
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required><br>
+            <input type="text" id="subject" name="subject">
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit">Submit</button>
         </form>
-
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-        </div>
-    </div>
+    </div>    
 </body>
 </html>
