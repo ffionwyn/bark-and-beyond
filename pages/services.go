@@ -1,10 +1,14 @@
 package pages
 
 import (
-    "github.com/gin-gonic/gin"
-    "net/http"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func ServicesHandler(c *gin.Context) {
-    c.String(http.StatusOK, "services page")
+    c.HTML(http.StatusOK, "services.html", gin.H{
+        "title": "Services",
+        "content": "This is the Services page content.",
+    })
 }

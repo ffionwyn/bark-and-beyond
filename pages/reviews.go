@@ -7,5 +7,8 @@ import (
 )
 
 func ReviewsHandler(c *gin.Context) {
-    c.String(http.StatusOK, "reviews page")
+    c.HTML(http.StatusOK, "reviews.html", gin.H{
+        "title": "Reviews",
+        "content": "This is the Reviews page content.",
+    })
 }
