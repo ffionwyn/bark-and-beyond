@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import Navigation from './navigation.js';
 import AboutUs from './pages/about-us';
 
@@ -11,7 +11,7 @@ function App() {
         <Route path="/about">
           <AboutUs />
         </Route>
-        {/*add more routes */}
+        {/* Add more routes */}
       </div>
     </Router>
   );
