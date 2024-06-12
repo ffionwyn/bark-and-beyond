@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Bark & Beyond</title>
+    <title>Reviews - Bark & Beyond</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -52,8 +52,7 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
-            font-family: 'Montserrat', sans-serif;
-            width: auto; /* Adjusted width to auto */
+            font-family: 'Montserrat', sans-serif; 
         }
 
         .contact-button:hover {
@@ -81,21 +80,35 @@
             padding: 20px;
         }
 
-        .about-section {
-            padding-bottom: 20px; 
+        .reviews {
+            margin-top: 20px;
         }
 
-        .about-section h2 {
-            color: #800080; 
+        .review {
+            margin-bottom: 20px;
+            border-left: 5px solid #800080;
+            padding-left: 10px;
+            position: relative; 
         }
 
-        .about-section p {
-            margin-bottom: 10px; 
+        .review-author {
+            font-weight: bold;
+            margin-bottom: 5px;
         }
 
-        .about-image-caption {
-            font-size: 12px;
-            color: #666;
+        .review-content {
+            color: #333;
+        }
+
+        .star-rating {
+            display: inline-block;
+            font-size: 20px; 
+            color: gold; 
+            margin-left: 10px;
+        }
+
+        .star-rating::before {
+            content: '★★★★★'; 
         }
     </style>
 </head>
@@ -115,6 +128,20 @@
     </div>
 
     <div class="content">
+        <div class="reviews">
+            <div class="review">
+                <p class="review-author">Steph</p>
+                <p class="review-content">Casey is the best. Every time she picks up my Squeaky Sausage Mabel you can see how happy both Mabel and Casey are to see each other. I get photos to see how her day went and Mabel always comes back tired but happy. Casey is the best! 10 out of 10!</p>
+                <span class="star-rating"></span> 
+            </div>
+            <div class="review">
+                <p class="review-author">Jane</p>
+                <p class="review-content">Highly recommend Bark & Beyond. Casey is so lovely and spent some extra time with Dougie our golden retriever as he didn't like getting in the van (we have not crate trained him).
+                Dougie gets so excited now when Casey arrives and practically drags her down the path to get in the van. He has become a lot more confident being with lots of different dogs.
+                And the added bonus is he is shattered after his pack walk so we get some nice chill time (very much needed when having a puppy)
+                Thank you so much Casey for taking such good care of Dougie, he is having the best time.</p>
+                <span class="star-rating"></span> 
+            </div>
         </div>
     </div>
 </body>
