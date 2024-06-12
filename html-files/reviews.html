@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
             margin: 0;
             padding: 0;
         }
         .sidebar {
             width: 250px;
-            background-color: lightgray;
-            height: 100vh;
+            background-color: #fff0f5; /* Match the background color of the sidebar */
+            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
             overflow-y: auto;
+            padding-top: 20px; /* Adjusted to match the top padding */
+            text-align: center; /* Center align the content */
+        }
+        .sidebar img.logo {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #800080;
         }
         .content {
             margin-left: 250px;
@@ -28,8 +48,8 @@
 </head>
 <body>
     <div class="sidebar">
+        <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
         <ul>
-            <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/reviews">Reviews</a></li>
