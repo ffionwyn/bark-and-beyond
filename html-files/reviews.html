@@ -3,61 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .title }}</title>
+    <title>About Us - Bark & Beyond</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: white;
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
             margin: 0;
-            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff0f5;
         }
+
         .sidebar {
-            width: 250px;
-            background-color: #fff0f5; /* Match the background color of the sidebar */
             height: 100%;
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
-            overflow-y: auto;
-            padding-top: 20px; /* Adjusted to match the top padding */
-            text-align: center; /* Center align the content */
+            background-color: #fff0f5; 
+            padding-top: 20px;
+            text-align: center;
         }
-        .sidebar img.logo {
+
+        .logo {
             width: 160px;
             height: 160px;
             margin-bottom: 20px;
         }
-        .sidebar ul {
+
+        .nav-links {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        .sidebar ul li {
+
+        .nav-links li {
             margin-bottom: 10px;
         }
-        .sidebar ul li a {
+
+        .nav-links li a {
             text-decoration: none;
             color: #800080;
         }
+
+        .contact-button {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            width: auto; /* Adjusted width to auto */
+        }
+
+        .contact-button:hover {
+            background-color: #660066;
+        }
+
+        .contact-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            margin-top: auto;
+        }
+
+        .social-buttons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
         .content {
             margin-left: 250px;
             padding: 20px;
+        }
+
+        .about-section {
+            padding-bottom: 20px; 
+        }
+
+        .about-section h2 {
+            color: #800080; 
+        }
+
+        .about-section p {
+            margin-bottom: 10px; 
+        }
+
+        .about-image-caption {
+            font-size: 12px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="sidebar">
         <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
-        <ul>
+        <ul class="nav-links">
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/reviews">Reviews</a></li>
         </ul>
+        <button class="contact-button"><a href="/contact">Contact Us</a></button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
+        </div>
     </div>
+
     <div class="content">
-        <h1>{{ .title }}</h1>
-        <p>{{ .content }}</p>
+        <div class="about-section">
+            <h2>About Bark & Beyond</h2>
+            <p>Welcome to Bark & Beyond, your trusted companion for all your pet care needs! Founded by passionate dog lover Casey, Bark & Beyond is committed to providing exceptional care and personalised attention to every furry friend.</p>
+            <p>With plenty of experience in dog walking, pet sitting, and specialised pet care services, I understand that each pet has unique needs and preferences. That's why I tailor my services to ensure the happiness, safety, and well-being of your beloved pets.</p>
+            <p>At Bark & Beyond, I believe in nurturing strong bonds between pets and their owners. Whether it's a solo or pack walk, a cosy pet sitting session, or a special event like a wedding, I am dedicated to making every moment memorable for you and your furry companions. Join our pack today and experience the Bark & Beyond difference!</p>
+            <p>Bringing a wealth of experience and knowledge in pet care, I've worked at various doggy daycares, honing my skills and gaining valuable insights into best practices. This journey has inspired me to open Bark & Beyond, where I can continue to provide top-notch care for pets and their owners alike.</p>
+            <div style="text-align: center;">
+                <p class="about-image-caption">This is my rescue dog Mila. You may see her from time to time on group walks.</p>
+                <img src="images/IMG_5403.jpg" alt="Bark & Beyond Image" class="about-image" style="width: 300px; height: 365px;">
+            </div>
+        </div>
     </div>
 </body>
 </html>
