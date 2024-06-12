@@ -47,7 +47,7 @@
         .contact-button {
             background-color: #800080;
             color: #fff0f5;
-            padding: 10px 20px;
+            padding: 8px 16px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -78,6 +78,8 @@
         .content {
             margin-left: 250px;
             padding: 20px;
+            max-width: calc(100% - 270px); 
+            position: relative; 
         }
 
         .hero-message {
@@ -101,16 +103,16 @@
         }
 
         .book-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
             background-color: #800080;
             color: #fff0f5;
-            padding: 10px 20px;
-            border: none;
+            padding: 8px 16px;
+            border: 2px solid #800080; 
             border-radius: 5px;
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            top: 20px;
+            right: calc(20px + 1rem); 
         }
 
         .book-button:hover {
