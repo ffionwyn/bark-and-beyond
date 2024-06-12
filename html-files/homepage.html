@@ -92,6 +92,28 @@
             display: inline;
             margin: 0;
         }
+
+        .book-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .book-button:hover {
+            background-color: #660066;
+        }
+
+        .book-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -111,10 +133,12 @@
 
     <div class="content">
         <h1>Welcome to Bark & Beyond!</h1>
+        <button class="book-button"><a href="/book-meet-greet">Book Your Meet and Greet</a></button>
         <div class="hero-message">
             <h2>Doggy Daycare</h2>
             <h2>to Get</h2>
             <h2>Tails Wagging</h2>
- 
+        </div>
+    </div>
 </body>
 </html>
