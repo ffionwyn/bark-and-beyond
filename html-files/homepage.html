@@ -12,13 +12,19 @@
             background-color: #fff0f5;
         }
 
-       .top-bar {
+        .top-bar {
             background-color: #800080;
             color: #fff0f5;
-            padding: px 20px; 
+            padding: 10px 20px;
             display: flex;
-            justify-content: space-between; 
-            align-items: center; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-white {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .top-bar a {
@@ -33,10 +39,10 @@
         }
 
         .logo {
-            width: 200px; 
+            width: 200px;
             height: auto;
             display: block;
-            margin: 20px auto; 
+            margin: 20px auto;
         }
 
         .content {
@@ -55,12 +61,12 @@
         .book-button {
             background-color: #800080;
             color: #fff0f5;
-            padding: 10px 20px;
+            padding: 4px 8px;
             border: 2px solid #800080;
-            border-radius: 5px; 
+            border-radius: 2px;
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
-            text-decoration: none; 
+            margin-left: 10px; /* Adjust margin as needed */
         }
 
         .book-button:hover {
@@ -70,26 +76,22 @@
         .book-button a {
             color: #fff0f5;
             text-decoration: none;
+            text-align: center;
         }
 
         .social-buttons {
             display: flex;
-            align-items: center; 
+            align-items: center;
         }
 
         .social-buttons a {
-            margin-right: 1px;
+            margin-left: 5px; /* Adjusted margin-left to make buttons closer together */
         }
 
         .social-buttons img {
-            width: 20px; 
-            height: auto; 
+            width: 20px;
+            height: auto;
             cursor: pointer;
-        }
-
-        .contact-info {
-            color: #fff0f5;
-            margin-left: 10px; 
         }
     </style>
 </head>
@@ -97,23 +99,27 @@
 
     <div class="top-bar">
         <div>
-            <a href="/about">About Us</a>
-            <a href="/services">Services</a>
-            <a href="/reviews">Reviews</a>
-            <a href="/contact">Contact Us</a>
+            <button class="book-button"><a href="/book-meet-greet">Book Your Meet and Greet</a></button>
         </div>
         <div class="social-buttons">
-            <button class="book-button"><a href="/book-meet-greet">Book Your Meet and Greet</a></button>
-            <p class="contact-info">Contact: barkbeyonddogs@gmail.com</p>
+            <p>Contact: barkbeyonddogs@gmail.com </p>
             <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
             <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
         </div>
+    </div>
+
+    <div class="top-bar-white">
+  <div>  <a href="/about">About Us</a>
+    <a href="/services">Services</a>
+    <a href="/reviews">Reviews</a>
+    <a href="/contact">Contact Us</a></div>
     </div>
 
     <div class="content">
         <div class="sidebar">
             <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
         </div>
+
         <div class="main-content">
             <h1>Welcome to Bark & Beyond!</h1>
         </div>
