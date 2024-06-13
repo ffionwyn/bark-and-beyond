@@ -55,11 +55,12 @@
         .book-button {
             background-color: #800080;
             color: #fff0f5;
-            padding: 4px 4px;
+            padding: 4px 8px; /* Adjusted padding */
             border: 2px solid #800080;
-            border-radius: 2px;
+            border-radius: 5px; /* Adjusted border radius */
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
+            text-decoration: none; /* Removed underline on hover */
         }
 
         .book-button:hover {
@@ -69,7 +70,6 @@
         .book-button a {
             color: #fff0f5;
             text-decoration: none;
-            text-align: center;
         }
 
         .social-buttons {
@@ -78,14 +78,18 @@
         }
 
         .social-buttons a {
-            margin-left: 0.1px; 
-            
+            margin-left: 10px; /* Increased margin between social icons */
         }
 
         .social-buttons img {
-            width: 15px; 
+            width: 20px; 
             height: auto; 
             cursor: pointer;
+        }
+
+        .contact-info {
+            color: #fff0f5;
+            margin-left: 10px; /* Added margin to separate from social buttons */
         }
     </style>
 </head>
@@ -100,7 +104,7 @@
         </div>
         <div class="social-buttons">
             <button class="book-button"><a href="/book-meet-greet">Book Your Meet and Greet</a></button>
-          <p>Contact: barkbeyonddogs@gmail.com </p>
+            <p class="contact-info">Contact: barkbeyonddogs@gmail.com</p>
             <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
             <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
         </div>
@@ -109,12 +113,11 @@
     <div class="content">
         <div class="sidebar">
             <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
-            </div>
         </div>
-
         <div class="main-content">
             <h1>Welcome to Bark & Beyond!</h1>
         </div>
     </div>
+
 </body>
 </html>
