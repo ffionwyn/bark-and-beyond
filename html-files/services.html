@@ -109,6 +109,50 @@
         .price-list-description {
             margin-left: 20px;
         }
+
+        .services-prices-title {
+            font-family: 'Montserrat', sans-serif;
+            color: #800080;
+            font-size: 3em;
+            font-weight: bold;
+            margin-left: 580px;
+        }
+
+        .services-prices-title span {
+            display: block;
+            line-height: 0.8; 
+        }
+
+        .services-prices-title .prices {
+            margin-left: 0.5cm; 
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: #ffd1dc; /* Light pink background */
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(50% - 40px); /* Two boxes in a row with some margin */
+            box-sizing: border-box;
+        }
+
+        .service-title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            margin: 0 0.5cm; /* 0.5 cm margins on left and right */
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
@@ -127,17 +171,60 @@
     </div>
 
     <div class="content">
+        <div class="services-prices-title">
+            <span>Services</span>
+            <span class="prices">& Prices</span>
+        </div>
+
         <h1>{{ .title }}</h1>
         <p>{{ .content }}</p>
+        
         <div class="price-list-container">
             <img src="../images/Bark and Beyond Price List-2.PNG" alt="Price List" class="price-list">
             <div class="price-list-description">
-                <p><strong>One Hour Solo Walk:</strong> Tailored walk for individual dogs, providing them with exercise, mental stimulation, and a chance to go exploring.</p>
-                <p><strong>Two Hour Group Walk:</strong> Social outings where dogs can interact with each other while getting their exercise needs met under my supervision.</p>
-                <p><strong>Meet and Greet:</strong> An introductory session where you, the pet owner, meets with me in person to discuss your pet's needs, behavior, and any requirements. This ensures a safe environment for both me and your dog.</p>
-                <p><strong>Pet Sitting Per Day/Night:</strong> Comprehensive care provided for pets in the comfort of their own home. This service includes feeding, exercise, and companionship, ensuring peace of mind for you as the owner while you are away. Pricing: £50 for one dog, £75 for two dogs. Pet sitting is only available on weekends.</p>
-                <p><strong>Pet Pop In:</strong> Short visits to check on pets, provide food and water as needed, administer medicine when/if needed, and brief companionship/play. Ideal for owners who are away for short periods but want to ensure their pets are well cared for.</p>
-                <p><strong>Wedding Chaperone:</strong> Specialized service where I will ensure the comfort and well-being of your pet during weddings, allowing you to enjoy your celebrations without worrying about your dog.</p>
+                <div class="service-container">
+                    <div class="service-box">
+                        <div class="service-title">One Hour Solo Walk</div>
+                        <div class="service-description">
+                            Tailored walk for individual dogs, providing them with exercise, mental stimulation, and a chance to go exploring.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Two Hour Group Walk</div>
+                        <div class="service-description">
+                            Social outings where dogs can interact with each other while getting their exercise needs met under my supervision.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Meet and Greet</div>
+                        <div class="service-description">
+                            An introductory session where you, the pet owner, meets with me in person to discuss your pet's needs, behavior, and any requirements. This ensures a safe environment for both me and your dog.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Pet Sitting Per Day/Night</div>
+                        <div class="service-description">
+                            Comprehensive care provided for pets in the comfort of their own home. This service includes feeding, exercise, and companionship, ensuring peace of mind for you as the owner while you are away. Pricing: £50 for one dog, £75 for two dogs. Pet sitting is only available on weekends.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Pet Pop In</div>
+                        <div class="service-description">
+                            Short visits to check on pets, provide food and water as needed, administer medicine when/if needed, and brief companionship/play. Ideal for owners who are away for short periods but want to ensure their pets are well cared for.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Wedding Chaperone</div>
+                        <div class="service-description">
+                            Specialised service where I will ensure the comfort and well-being of your pet during weddings, allowing you to enjoy your celebrations without worrying about your dog.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
