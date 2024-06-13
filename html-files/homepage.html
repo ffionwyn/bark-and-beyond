@@ -12,18 +12,29 @@
             background-color: #fff0f5;
         }
 
-        .topbar {
-            background-color: #fff0f5;
+        .top-bar {
+            background-color: #800080;
+            color: #fff0f5;
             padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .top-bar a {
+            color: #fff0f5;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
         }
 
         .logo {
             width: 200px; 
             height: auto;
+            display: block;
+            margin: 20px auto; 
         }
 
         .nav-links {
@@ -31,10 +42,11 @@
             padding: 0;
             margin: 0;
             display: flex;
+            justify-content: center; 
         }
 
         .nav-links li {
-            margin-right: 20px;
+            margin: 0 10px;
         }
 
         .nav-links li a {
@@ -45,13 +57,6 @@
 
         .nav-links li a:hover {
             color: #660066;
-        }
-
-        .social-buttons img {
-            width: 30px;
-            height: 30px;
-            margin-left: 10px;
-            cursor: pointer;
         }
 
         .content {
@@ -98,33 +103,37 @@
             color: #fff0f5;
             text-decoration: none;
         }
+
+        .social-buttons img {
+            width: 20px; 
+            height: auto;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
 
+    <div class="top-bar">
+        <a href="/about">About Us</a>
+        <a href="/services">Services</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact">Contact Us</a>
+        <div class="social-buttons">
+        <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
+        <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
+    </div>
+    </div>
 
     <div class="content">
         <div class="sidebar">
             <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
-            <ul class="nav-links">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/reviews">Reviews</a></li>
-            </ul>
-            <button class="contact-button"><a href="/contact">Contact Us</a></button>
-            <div class="social-buttons">
-                <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
-                <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
             </div>
         </div>
 
         <div class="main-content">
             <h1>Welcome to Bark & Beyond!</h1>
-            <div class="hero-message">
-                <h2>Doggy Daycare</h2>
-                <h2>to Get</h2>
-                <h2>Tails Wagging</h2>
-            </div>
             <button class="book-button"><a href="/book-meet-greet">Book Your Meet and Greet</a></button>
         </div>
     </div>
