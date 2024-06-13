@@ -140,17 +140,22 @@
             padding: 20px;
             width: calc(50% - 40px); /* Two boxes in a row with some margin */
             box-sizing: border-box;
+            transition: transform 0.3s ease; /* Smooth transition for transform */
+            text-align: center; /* Center align text */
+        }
+
+        .service-box:hover {
+            transform: scale(1.05); /* Scale up slightly on hover */
         }
 
         .service-title {
-            text-align: center;
+            text-align: center; /* Center align text */
             font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 10px;
         }
 
         .service-description {
-            margin: 0 0.5cm; /* 0.5 cm margins on left and right */
             text-align: justify;
         }
     </style>
