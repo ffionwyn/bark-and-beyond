@@ -12,88 +12,66 @@
             background-color: #fff0f5;
         }
 
-        .sidebar {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #fff0f5; 
-            padding-top: 20px;
-            text-align: center;
+        .topbar {
+            background-color: #fff0f5;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .logo {
-            width: 160px;
-            height: 160px;
-            margin-bottom: 20px;
+            width: 120px;
+            height: auto;
         }
 
         .nav-links {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
         }
 
         .nav-links li {
-            margin-bottom: 10px;
+            margin-right: 20px;
         }
 
         .nav-links li a {
             text-decoration: none;
             color: #800080;
+            font-weight: bold;
         }
 
-        .contact-button {
-            background-color: #800080;
-            color: #fff0f5;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            font-family: 'Montserrat', sans-serif; 
-        }
-
-        .contact-button:hover {
-            background-color: #660066;
-        }
-
-        .contact-button a {
-            color: #fff0f5;
-            text-decoration: none;
-        }
-
-        .social-buttons {
-            margin-top: auto;
+        .nav-links li a:hover {
+            color: #660066;
         }
 
         .social-buttons img {
             width: 30px;
             height: 30px;
-            margin: 0 5px;
+            margin-left: 10px;
             cursor: pointer;
         }
 
         .content {
-            margin-left: 250px;
             padding: 20px;
-            max-width: calc(100% - 270px); 
-            position: relative; 
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .hero-message {
-            text-align: center;
             color: #800080;
-            font-size: 2.5em; 
+            font-size: 2.5em;
             font-weight: bold;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
         .hero-message h2 {
             display: inline;
             margin: 0;
-            font-size: 0.75em; 
+            font-size: 0.75em;
         }
 
         .content h1 {
@@ -106,13 +84,10 @@
             background-color: #800080;
             color: #fff0f5;
             padding: 8px 16px;
-            border: 2px solid #800080; 
+            border: 2px solid #800080;
             border-radius: 5px;
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
-            position: absolute;
-            top: 20px;
-            right: calc(20px + 1rem); 
         }
 
         .book-button:hover {
@@ -126,14 +101,13 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
+    <div class="topbar">
         <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
         <ul class="nav-links">
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/reviews">Reviews</a></li>
         </ul>
-        <button class="contact-button"><a href="/contact">Contact Us</a></button>
         <div class="social-buttons">
             <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
             <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
