@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Bark & Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff0f5;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff0f5; 
+            padding-top: 20px;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #800080;
+        }
+
+        .contact-button {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        .contact-button:hover {
+            background-color: #660066;
+        }
+
+        .contact-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            margin-top: auto;
+        }
+
+        .social-buttons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .hero-message {
+            text-align: center;
+            color: #800080;
+            font-size: 2.5em; 
+            font-weight: bold;
+            margin-bottom: 20px; 
+        }
+
+        .hero-message h2 {
+            display: inline;
+            margin: 0;
+        }
+
+        .price-list-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .price-list {
+            max-width: 500px; 
+            max-height: 500px; 
+            width: auto;
+            height: auto;
+        }
+
+        .price-list-description {
+            margin-left: 20px;
+        }
+
+        .services-prices-title {
+            font-family: 'Montserrat', sans-serif;
+            color: #800080;
+            font-size: 3em;
+            font-weight: bold;
+            margin-left: 580px;
+        }
+
+        .services-prices-title span {
+            display: block;
+            line-height: 0.8; 
+        }
+
+        .services-prices-title .prices {
+            margin-left: 0.5cm; 
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: #ffd1dc; /* Light pink background */
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(50% - 40px); /* Two boxes in a row with some margin */
+            box-sizing: border-box;
+            transition: transform 0.3s ease; /* Smooth transition for transform */
+            text-align: center; /* Center align text */
+        }
+
+        .service-box:hover {
+            transform: scale(1.05); /* Scale up slightly on hover */
+        }
+
+        .service-title {
+            text-align: center; /* Center align text */
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+        </ul>
+        <button class="contact-button"><a href="/contact">Contact Us</a></button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="services-prices-title">
+            <span>Services</span>
+            <span class="prices">& Prices</span>
+        </div>
+
+        <h1>{{ .title }}</h1>
+        <p>{{ .content }}</p>
+        
+        <div class="price-list-container">
+            <img src="../images/Bark and Beyond Price List-2.PNG" alt="Price List" class="price-list">
+            <div class="price-list-description">
+                <div class="service-container">
+                    <div class="service-box">
+                        <div class="service-title">One Hour Solo Walk</div>
+                        <div class="service-description">
+                            Tailored walk for individual dogs, providing them with exercise, mental stimulation, and a chance to go exploring.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Two Hour Group Walk</div>
+                        <div class="service-description">
+                            Social outings where dogs can interact with each other while getting their exercise needs met under my supervision.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Meet and Greet</div>
+                        <div class="service-description">
+                            An introductory session where you, the pet owner, meets with me in person to discuss your pet's needs, behavior, and any requirements. This ensures a safe environment for both me and your dog.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Pet Sitting Per Day/Night</div>
+                        <div class="service-description">
+                            Comprehensive care provided for pets in the comfort of their own home. This service includes feeding, exercise, and companionship, ensuring peace of mind for you as the owner while you are away. Pricing: £50 for one dog, £75 for two dogs. Pet sitting is only available on weekends.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Pet Pop In</div>
+                        <div class="service-description">
+                            Short visits to check on pets, provide food and water as needed, administer medicine when/if needed, and brief companionship/play. Ideal for owners who are away for short periods but want to ensure their pets are well cared for.
+                        </div>
+                    </div>
+
+                    <div class="service-box">
+                        <div class="service-title">Wedding Chaperone</div>
+                        <div class="service-description">
+                            Specialised service where I will ensure the comfort and well-being of your pet during weddings, allowing you to enjoy your celebrations without worrying about your dog.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

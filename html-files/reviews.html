@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Bark & Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff0f5;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff0f5; 
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #800080;
+        }
+
+        .contact-button {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        .contact-button:hover {
+            background-color: #660066;
+        }
+
+        .contact-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            margin-top: auto;
+        }
+
+        .social-buttons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .reviews {
+            margin-top: 20px;
+            font-size: 10px;
+            position: relative; /* Add this to position the pseudo-element relative to .reviews */
+        }
+
+        .reviews::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #800080; /* Purple color */
+        }
+
+        .review {
+            margin-bottom: 20px;
+            padding-left: 15px; /* Adjust padding to accommodate the line */
+            position: relative; 
+        }
+
+        .review-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .review-content {
+            color: #333;
+        }
+
+        .star-rating {
+            display: inline-block;
+            font-size: 20px; 
+            color: gold; 
+            margin-left: 10px;
+        }
+
+        .star-rating::before {
+            content: '★★★★★'; 
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+        </ul>
+        <button class="contact-button"><a href="/contact">Contact Us</a></button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="reviews">
+            <div class="review">
+                <p class="review-author">Steph</p>
+                <p class="review-content">Casey is the best. Every time she picks up my Squeaky Sausage Mabel you can see how happy both Mabel and Casey are to see each other. I get photos to see how her day went and Mabel always comes back tired but happy. Casey is the best! 10 out of 10!</p>
+                <span class="star-rating"></span> 
+            </div>
+            <div class="review">
+                <p class="review-author">Jane</p>
+                <p class="review-content">Highly recommend Bark & Beyond. Casey is so lovely and spent some extra time with Dougie our golden retriever as he didn't like getting in the van (we have not crate trained him).
+                Dougie gets so excited now when Casey arrives and practically drags her down the path to get in the van. He has become a lot more confident being with lots of different dogs.
+                And the added bonus is he is shattered after his pack walk so we get some nice chill time (very much needed when having a puppy)
+                Thank you so much Casey for taking such good care of Dougie, he is having the best time.</p>
+                <span class="star-rating"></span> 
+            </div>
+            <div class="review">
+                <p class="review-author">Ffion</p>
+                <p class="review-content">I am extremely pleased with the service provided by Casey. My dog Minnie absolutely adores her and always returns from walks thoroughly exhausted, which just proves how perfect the service is at Bark and Beyond. Thank you for always taking such good care of my baby. Highly recommend!</p>
+                <span class="star-rating"></span> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

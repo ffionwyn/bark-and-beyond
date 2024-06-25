@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Meet and Greet - Bark & Beyond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff0f5;
+            display: flex; /* Added to make sidebar and content area align horizontally */
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            background-color: #fff0f5; 
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #800080;
+        }
+
+        .contact-button {
+            background-color: #800080;
+            color: #fff0f5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        .contact-button:hover {
+            background-color: #660066;
+        }
+
+        .contact-button a {
+            color: #fff0f5;
+            text-decoration: none;
+        }
+
+        .social-buttons {
+            margin-top: auto;
+        }
+
+        .social-buttons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            flex: 1; /* Added to make content area fill remaining space */
+            padding: 20px;
+        }
+
+        #calendar-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #calendar {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="/"><img src="/images/Bark%20and%20Beyond%20logo.PNG" alt="Bark and Beyond Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/reviews">Reviews</a></li>
+        </ul>
+        <button class="contact-button"><a href="/contact">Contact Us</a></button>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61560558776114"><img src="/images/Facebook.avif" alt="Facebook"></a>
+            <a href="https://www.instagram.com/barkbeyondwrexham?igsh=b3Ftd2x5eW1rMTYy"><img src="/images/Instagram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=barkbeyonddogs%40gmail.com&ctz=Europe%2FLondon" 
+                    id="calendar" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
