@@ -3,15 +3,11 @@ package main
 import (
 	"os"
 
+	"github.com/ffiongriffiths/bark-and-beyond/pages"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-    port := os.Getenv("PORT")
-    if port == "" {
-        port = "8080" 
-    }
-
     r := gin.Default()
 
     r.Static("/images", "./images")
@@ -41,5 +37,11 @@ func main() {
         c.HTML(200, "book-meet-greet.html", gin.H{})
     })
 
+    r.POST("/submitForm", pages.HandleFormSubmission)
+
+    port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080" 
+    }
     r.Run(":" + port)
 }
