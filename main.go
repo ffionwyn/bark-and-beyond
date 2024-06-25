@@ -1,10 +1,17 @@
 package main
 
 import (
+	"os"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+    port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080" // Default port if not specified
+    }
+
     r := gin.Default()
 
     r.Static("/images", "./images")
@@ -34,5 +41,5 @@ func main() {
         c.HTML(200, "book-meet-greet.html", gin.H{})
     })
 
-    r.Run(":8080")
+    r.Run(":" + port)
 }
