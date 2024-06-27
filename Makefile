@@ -1,7 +1,7 @@
 build:
-    go build -o server .
+	go build -o server .
 
 start:
-    ./server
+	./server
 
 .PHONY: build start
