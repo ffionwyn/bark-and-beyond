@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"github.com/ffiongriffiths/bark-and-beyond/pages"
 	"github.com/gin-gonic/gin"
 )
@@ -37,5 +39,10 @@ func main() {
 
     r.POST("/submitForm", pages.HandleFormSubmission)
 
-    r.Run(":8080")
+    port := os.Getenv("PORT")
+    if port == "" {
+        port = "8080" // Default port if not specified
+    }
+
+    r.Run(":" + port)
 }
